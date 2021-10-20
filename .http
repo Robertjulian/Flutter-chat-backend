@@ -1,0 +1,27 @@
+### Crear Usuario chat backend
+
+POST http://localhost:3000/api/login/new
+Content-Type: application/json
+
+{
+    "nombre" : "Robert",
+    "email" : "testss@test.com",
+    "password" : "123456"
+}
+
+### Login Usuario chat backend
+
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email" : "test@test.com",
+    "password" : "123456"
+}
+
+### Token Renew chat backend
+
+GET  http://localhost:3000/api/login/renew
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTZmNzI0ZmZjNDE4YjRhYTBkMDUwMzMiLCJpYXQiOjE2MzQ2OTg1ODUsImV4cCI6MTYzNDc4NDk4NX0.25rtj_iP3KDw9oT6zBmhn9QxX3H2k92jc37zxrYw7zM
+
+
