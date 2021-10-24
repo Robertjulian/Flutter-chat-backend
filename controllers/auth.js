@@ -64,15 +64,10 @@ const login = async (req, res = response) => {
         //Generar JWT
         const token = await generarJWT(usuarioDB.id);
 
-        res.json({
+        return res.json({
             ok: true,
             usuario: usuarioDB,
             token
-        });
-
-        return res.json({
-            ok: true,
-            msg: 'login'
         });
     } catch (error) {
         console.log(error);

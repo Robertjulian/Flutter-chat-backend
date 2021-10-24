@@ -5,7 +5,7 @@ Content-Type: application/json
 
 {
     "nombre" : "Robert",
-    "email" : "testss@test.com",
+    "email" : "test1@test.com",
     "password" : "123456"
 }
 
@@ -15,7 +15,7 @@ POST http://localhost:3000/api/login
 Content-Type: application/json
 
 {
-    "email" : "test@test.com",
+    "email" : "test1@test.com",
     "password" : "123456"
 }
 
@@ -23,5 +23,17 @@ Content-Type: application/json
 
 GET  http://localhost:3000/api/login/renew
 x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTZmNzI0ZmZjNDE4YjRhYTBkMDUwMzMiLCJpYXQiOjE2MzQ2OTg1ODUsImV4cCI6MTYzNDc4NDk4NX0.25rtj_iP3KDw9oT6zBmhn9QxX3H2k92jc37zxrYw7zM
+
+### get usuarios
+
+GET  http://localhost:3000/api/usuarios?desde=0
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTZmOTc5NDEzMGE4NWZiMGQ1ZGE1ZWEiLCJpYXQiOjE2MzQ4NzM0NDcsImV4cCI6MTYzNDk1OTg0N30.sEjKd70Jzc4vmqy7vJFOnsDG4EixnIVXnntvSMh8xDo
+
+### get mensajes
+
+GET  http://localhost:3000/api/mensajes/617074dc45865943accd44f7
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTZmOTc5NDEzMGE4NWZiMGQ1ZGE1ZWEiLCJpYXQiOjE2MzQ5MjE0OTcsImV4cCI6MTYzNTAwNzg5N30.SPs5fDKfBqIRm1H5I3l7cWhU8n1gAjqXwnUB_---LaA
 
 
